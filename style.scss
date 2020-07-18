@@ -1,5 +1,4 @@
 body {
-    // border: 2px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,39 +8,42 @@ body {
     flex-direction: column;
     justify-content: center;
     background-image: url("onlineShopping.jpg");
-    // background-repeat: no-repeat;
     background-size: cover;
-   
-
-
+    
     header {
         h1 {
             font-size: 65px;
-            font-weight: bold;
-            
-        
+            font-weight: bolder;
         }
     }
   
-
     main {
         font-size: 25px;
+        color: #5a1414;
         form {
-            // border: 2px solid green;
+
+            input {
+                outline: none;
+            }
+          
+            label {
+                font-weight: bold;
+                font-size: 30px;
+                background-color: #ece3e3;
+                opacity: 0.5;
+            }
+        
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             align-content: center;
-            // background: whitesmoke;
-          
         }
 
-        ul{
+        ul {
             li {
                 list-style-type: none;
                 cursor: pointer;
-              
             }
         }
     }

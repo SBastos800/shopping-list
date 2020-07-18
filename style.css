@@ -21,11 +21,12 @@ body {
 
 body header h1 {
   font-size: 65px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 body main {
   font-size: 25px;
+  color: #5a1414;
 }
 
 body main form {
@@ -44,6 +45,17 @@ body main form {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+body main form input {
+  outline: none;
+}
+
+body main form label {
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #ece3e3;
+  opacity: 0.5;
 }
 
 body main ul li {
