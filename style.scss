@@ -21,6 +21,10 @@ body {
     }
   
     main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 25px;
         color: #5a1414;
         form {
@@ -44,6 +48,8 @@ body {
         }
 
         ul {
+            background-color: white;
+            opacity: 0.9;
             li {
                 list-style-type: none;
                 cursor: pointer;
