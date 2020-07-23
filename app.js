@@ -1,6 +1,7 @@
 const addProduct = document.querySelector('.addProduct');
 const list = document.querySelector('ul');
 
+
 addProduct.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -10,6 +11,10 @@ addProduct.addEventListener('submit', e => {
     <li>
         <span>${newProduct}</span>
         <i class="fas fa-trash-alt"></i>
-    </li>`;
+    </li>`; 
 
+    addProduct.reset();
 })
+
+
+
