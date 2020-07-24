@@ -29,8 +29,12 @@ body {
         align-items: center;
         font-size: 25px;
         color: #5a1414;
-        form {
 
+        .filtered {
+            display: none;
+        }
+
+        form {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -48,6 +52,8 @@ body {
                 opacity: 0.5;
             }   
         }
+
+      
 
         ul {
             background-color: white;
