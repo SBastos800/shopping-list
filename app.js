@@ -1,6 +1,6 @@
 const addProduct = document.querySelector('.addProduct');
-const list = document.querySelector('ul');
-
+const list = document.querySelector('.list');
+const searchForm = document.querySelector('.searchForm input');
 
 addProduct.addEventListener('submit', e => {
     e.preventDefault();
@@ -11,7 +11,7 @@ addProduct.addEventListener('submit', e => {
     <li>
         <span>${newProduct}</span>
         <i class="fas fa-trash-alt"></i>
-    </li>`; 
+    </li>`;
 
     // scrollTo(0, 0);
 
@@ -21,13 +21,26 @@ addProduct.addEventListener('submit', e => {
 const filteredItems = (itemTyped) => {
     Array.from(list.children)
         .filter((item) => {
-            return !item.textContent.toLowerCase().includes(itemTyped)})
+            return !item.textContent.toLowerCase().includes(itemTyped)
+        })
         .forEach((item) => {
             item.classList.add("filtered");
         });
+
+    Array.from(list.children)
+        .filter((item) => {
+            return item.textContent.toLowerCase().includes(itemTyped)
+        })
+        .forEach((item) => {
+            item.classList.remove("filtered");
+        });
 }
 
-filteredItems(itemTyped);
+searchForm.addEventListener('keyup', () => {
+    const itemTyped = searchForm.value.toLowerCase().trim();
+    filteredItems(itemTyped);
+})
 
 
 
+        
