@@ -13,8 +13,21 @@ addProduct.addEventListener('submit', e => {
         <i class="fas fa-trash-alt"></i>
     </li>`; 
 
+    // scrollTo(0, 0);
+
     addProduct.reset();
 })
+
+const filteredItems = (itemTyped) => {
+    Array.from(list.children)
+        .filter((item) => {
+            return !item.textContent.toLowerCase().includes(itemTyped)})
+        .forEach((item) => {
+            item.classList.add("filtered");
+        });
+}
+
+filteredItems(itemTyped);
 
 
 
