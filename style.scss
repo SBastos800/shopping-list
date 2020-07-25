@@ -11,6 +11,7 @@ body {
     justify-content: center;
     background-image: url("onlineShopping.jpg");
     background-size: cover;
+  
     
     header {
         h1 {
@@ -23,6 +24,8 @@ body {
     }
   
     main {
+        // border: 2px solid red;
+        background-color:	rgba(255, 255, 255, 0.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,4 +67,10 @@ body {
             }
         }
     }
+    
+        small {
+          background-color: #cfcece;
+        }
+       
+    
 }

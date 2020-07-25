@@ -28,6 +28,7 @@ body header h1 {
 }
 
 body main {
+  background-color: rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,5 +87,9 @@ body main ul {
 body main ul li {
   list-style-type: none;
   cursor: pointer;
+}
+
+body small {
+  background-color: #cfcece;
 }
 /*# sourceMappingURL=style.css.map */
