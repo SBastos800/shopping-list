@@ -2,6 +2,7 @@ const addProduct = document.querySelector('.addProduct');
 const list = document.querySelector('.list');
 const searchForm = document.querySelector('.searchForm input');
 
+
 addProduct.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -18,6 +19,14 @@ addProduct.addEventListener('submit', e => {
     addProduct.reset();
 })
 
+
+list.addEventListener('click', (e) => {
+ if (e.target.classList.contains('delete')) {
+     e.target.parentElement.remove()
+ }
+
+
+})
 const filteredItems = (itemTyped) => {
     Array.from(list.children)
         .filter((item) => {
