@@ -75,13 +75,6 @@ body main form input {
 body main form label {
   font-weight: bold;
   font-size: 30px;
-  background-color: #ece3e3;
-  opacity: 0.5;
-}
-
-body main ul {
-  background-color: white;
-  opacity: 0.9;
 }
 
 body main ul li {
@@ -90,6 +83,6 @@ body main ul li {
 }
 
 body small {
-  background-color: #cfcece;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
